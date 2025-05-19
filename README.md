@@ -1,4 +1,4 @@
-# personal-portfolio
+# Personal Portfolio
 Roadmap.sh Personal Portfolio project
 
 Project-URL: https://roadmap.sh/projects/portfolio-website
