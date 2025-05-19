@@ -10,16 +10,15 @@ html {
 body {
   font-family: Epilogue, Verdana, Geneva, Tahoma, sans-serif;
   background-color: hsl(0, 0%, 3%);
-  color: hsl(300, 0%, 65%);
+  color: hsl(300, 0%, 75%);
   font-size: 1.2rem;
   margin: 0;
   line-height: 1.7;
-/*
+
   @media (prefers-color-scheme: light) {
-    background-color:  hsl(292, 93%, 90%);
-    color: black;
+    background-color:  hsl(292, 93%, 95%);
+    color:hsl(300, 0%, 25%);
   }
- */
 }
 .wrapper {
   max-inline-size: 1400px;
@@ -33,6 +32,7 @@ header {
   background-image: linear-gradient(hsl(292, 93%, 35%),hsl(292, 93%, 10%));
   text-align: center;
   
+  
  
    @media (width > 900px) {
     display: flex;
@@ -42,6 +42,11 @@ header {
     padding-block: 0;
     }
   
+  @media (prefers-color-scheme: light) {
+    background-image: linear-gradient(hsl(292, 93%, 90%), hsl(292, 93%, 80%));
+    color: hsl(292, 93%, 10%);
+    box-shadow: 0px 1px 15px hsl(300, 0%, 50%);
+      }
 }
 
 img {
@@ -54,6 +59,10 @@ h1 {
   color: hsl(292, 93%, 90%);
   text-align: start;
   margin-inline: 3.12rem;
+
+  @media (prefers-color-scheme: light) {
+    color: hsl(292, 93%, 25%);
+  }
 }
 
 .centred-title {
@@ -62,12 +71,20 @@ h1 {
 
 h2 {
   font-family: aboreto;
-  color: white;  
+  color: white; 
+  
+   @media (prefers-color-scheme: light) {
+    color: hsl(292, 93%, 25%);
+  }
 }
 
 h3 {
   color: white;
   font-weight: 400;
+
+  @media (prefers-color-scheme: light) {
+    color: hsl(0, 0%, 3%);
+  }
 }
 
 footer {
@@ -77,16 +94,30 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media (prefers-color-scheme: light) {
+    background-image: linear-gradient(hsl(292, 93%, 80%), hsl(292, 93%, 90%));
+    color: hsl(292, 93%, 10%);
+    border: 1px solid hsl(292, 93%, 60%);
+  }
 }
 
 a {
   text-decoration: none;
   color: hsl(292, 93%, 90%);
+
+  @media (prefers-color-scheme: light) {
+    color: hsl(292, 93%, 10%);
+  }
 }
 
 a:hover,
 a:focus-visible {
   color: hsl(292, 93%, 50%);
+
+  @media (prefers-color-scheme: light) {
+    color: hsl(292, 93%, 35%);
+  }
 }
 
 a:active {
@@ -100,6 +131,11 @@ button {
   border: none;
   border-radius: 50px;
   color: hsl(292, 93%, 90%);
+
+  @media (prefers-color-scheme: light) {
+    background-image: linear-gradient(hsl(292, 93%, 90%), hsl(292, 93%, 80%));
+    color: hsl(292, 93%, 10%);
+  }
 }
 
 button:hover,
@@ -160,6 +196,12 @@ nav {
   box-shadow: 5px -5px 15px hsl(292, 93%, 20%);
   padding: 1.25rem;
   background-image: linear-gradient( hsl(0, 0%, 3%),hsl(292, 93%, 3%));
+
+  @media (prefers-color-scheme: light) {
+   /*background-image: linear-gradient(hsl(292, 93%, 95%), hsl(292, 93%, 90%));*/
+   background:  hsl(292, 93%, 95%);
+   box-shadow: 5px 5px 15px hsl(300, 0%, 70%);
+  }
  
 }
 .column-section {
@@ -185,13 +227,24 @@ nav {
 .review-card {
   background-image: linear-gradient(hsl(292, 93%, 10%),hsl(292, 93%, 3%));
   border-radius: 25px;
-  border: 2px solid hsl(292, 93%, 20%);
+  border: 2px solid hsl(292, 93%, 15%);
   max-width: 300px;
   padding: 1.25rem;
+
+   @media (prefers-color-scheme: light) {
+    color: hsl(0, 0%, 3%);
+    background: hsl(292, 93%, 90%);
+    border: none; 
+  }
 }
+
 
 .quote {
   color: white;
+
+  @media (prefers-color-scheme: light) {
+    color: hsl(0, 0%, 3%);
+  }
 }
 
 .quote-name {
@@ -242,9 +295,15 @@ form {
   padding: 1.25rem;
   background-image: linear-gradient(hsl(292, 93%, 10%),hsl(292, 93%, 3%));
   border-radius: 25px;
-  border: 2px solid hsl(292, 93%, 20%);
+  border: 2px solid hsl(292, 93%, 15%);
   text-align: end;
   margin-block: 5rem;
+
+  @media (prefers-color-scheme: light) {
+   background: hsl(292, 93%, 95%);
+   box-shadow: 5px 5px 15px hsl(300, 0%, 70%);
+   border: none;
+  }
 }
 
 label {
@@ -256,13 +315,25 @@ input,
 textarea {
   width: 300px;
   height: 2rem;
-  border: 2px solid hsl(292, 93%, 20%);
+  border: 2px solid hsl(292, 93%, 15%);
+  background-color: hsl(0, 0%, 3%);
+  font-size: 1.2rem;
+  color: hsl(300, 0%, 75%);
+
+  @media (prefers-color-scheme: light) {
+    background: hsl(292, 93%, 95%);
+    color: hsl(0, 0%, 3%);
+  }
 }
 
 input:focus,
 textarea:focus {
   outline-style: solid;
   outline-color: hsl(292, 93%, 90%);
+
+  @media (prefers-color-scheme: light) {
+    outline-color:hsl(292, 93%, 50%);
+  }
 }
 
 textarea {
