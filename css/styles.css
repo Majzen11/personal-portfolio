@@ -3,14 +3,23 @@ html {
    font-size: 100%;
 }
 
+:root {
+  color-scheme: light dark;
+}
+
 body {
   font-family: Epilogue, Verdana, Geneva, Tahoma, sans-serif;
-  background-color: black;
+  background-color: hsl(0, 0%, 3%);
   color: hsl(300, 0%, 65%);
   font-size: 1.2rem;
   margin: 0;
   line-height: 1.7;
- 
+/*
+  @media (prefers-color-scheme: light) {
+    background-color:  hsl(292, 93%, 90%);
+    color: black;
+  }
+ */
 }
 .wrapper {
   max-inline-size: 1400px;
@@ -19,8 +28,8 @@ body {
 
 header {
   color: hsl(292, 93%, 90%);
-  padding-inline: 15px;
-  padding-block: 0 15px;
+  padding-inline: 1rem;
+  padding-block: 0 1rem;
   background-image: linear-gradient(hsl(292, 93%, 35%),hsl(292, 93%, 10%));
   text-align: center;
   
@@ -29,7 +38,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 30px;
+    padding-inline: 2rem;
     padding-block: 0;
     }
   
@@ -39,39 +48,21 @@ img {
   display: block;
 }
 
-.profile-logo {
-  display: flex;
-  width: 100%;
-  gap: 20px;
-  font-family: Aboreto;
-  font-size: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  
-  @media (width > 900px) {
-    justify-content: start;
-    }
- 
-  
-}
-
-nav {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
- 
-}
-
 h1 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-family: aboreto;
   color: hsl(292, 93%, 90%);
+  text-align: start;
+  margin-inline: 3.12rem;
+}
+
+.centred-title {
+  text-align: center;
 }
 
 h2 {
   font-family: aboreto;
-  color: white;
-  
+  color: white;  
 }
 
 h3 {
@@ -79,19 +70,13 @@ h3 {
   font-weight: 400;
 }
 
-button {
+footer {
+  color: hsl(292, 93%, 90%);
   background-image: linear-gradient(hsl(292, 93%, 35%),hsl(292, 93%, 10%));
-  padding: 15px;
-  font-size: 1.2rem;
-  border: none;
-  border-radius: 50px;
-}
-
-.hero-section {
-  text-align: center;
-  line-height: 1;
-  padding-block: 100px;
-  
+  padding: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -108,50 +93,105 @@ a:active {
   opacity: 50%;
 }
 
+button {
+  background-image: linear-gradient(hsl(292, 93%, 35%),hsl(292, 93%, 10%));
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  color: hsl(292, 93%, 90%);
+}
+
+button:hover,
+button:focus-visible {
+  color: hsl(292, 93%, 50%);
+}
+
+
+/*Header*/
+
+.profile-logo {
+  display: flex;
+  width: 100%;
+  gap: 1.25rem;
+  font-family: Aboreto;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-content: center;
+  
+  @media (width > 900px) {
+    justify-content: start;
+    }
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+}
+
+/*Hero section*/
+
+.main-title {
+  font-size: 4rem;
+  font-family: aboreto;
+  
+}
+
+.hero-section {
+  line-height: 1;
+  padding-block: 6.25rem;
+  text-align: center;
+}
+
 .three-column-layout {
   display: grid;
-  gap: 50px;
+  gap: 3.12rem;
+  margin-inline: 3.12rem;
   
   @media (width > 900px) {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-block-end: 100px;
+    margin-block-end: 6.25rem;
   }
   
 }
 .column {
   border-radius: 25px;
   box-shadow: 5px -5px 15px hsl(292, 93%, 20%);
-  padding: 20px;
+  padding: 1.25rem;
+  background-image: linear-gradient( hsl(0, 0%, 3%),hsl(292, 93%, 3%));
  
 }
 .column-section {
   padding-bottom: 30px;
 }
 
+/*Review Section*/
+
 .review-section {
-  margin-inline: 20px;
-  margin-block-end: 50px;
+  margin-inline: 1.25rem;
+  margin-block-end: 3.12rem;
+  text-align: center;
 }
 
 .review-column-layout {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
-  margin-block-start: 50px;
+  gap: 3.12rem;
+  margin-block-start: 3.12rem;
 }
 
 .review-card {
   background-image: linear-gradient(hsl(292, 93%, 10%),hsl(292, 93%, 3%));
   border-radius: 25px;
+  border: 2px solid hsl(292, 93%, 20%);
   max-width: 300px;
-  /*box-shadow: 5px -5px 15px hsl(292, 93%, 20%);*/
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .quote {
   color: white;
-  
 }
 
 .quote-name {
@@ -165,11 +205,68 @@ a:active {
   line-height: 1;
 }
 
-footer {
-  color: hsl(292, 93%, 90%);
-  background-image: linear-gradient(hsl(292, 93%, 35%),hsl(292, 93%, 10%));
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+/*Two column layout pages*/
+
+.two-column-layout {
+  display: grid;
+  gap: 3.12rem;
+  margin-inline: 3.12rem;
+  
+  @media (width > 900px) {
+    grid-template-columns: 1fr 1fr;
+    margin-block-end: 6.25rem;
+  }
 }
+
+/*Contact page*/
+
+
+.centered-title {
+  text-align: center;
+}
+
+.contact-links {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.contact-form {
+  text-align: center; 
+}
+
+form {
+  display: inline-block;
+  padding: 1.25rem;
+  background-image: linear-gradient(hsl(292, 93%, 10%),hsl(292, 93%, 3%));
+  border-radius: 25px;
+  border: 2px solid hsl(292, 93%, 20%);
+  text-align: end;
+  margin-block: 5rem;
+}
+
+label {
+  display:inline-block;
+  min-width: 4rem;
+}
+
+input,
+textarea {
+  width: 300px;
+  height: 2rem;
+  border: 2px solid hsl(292, 93%, 20%);
+}
+
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: hsl(292, 93%, 90%);
+}
+
+textarea {
+  vertical-align: top;
+  height: 5rem;
+}
+  

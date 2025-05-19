@@ -11,10 +11,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
+
   <body>
-    <div class="wrapper">
-      <header>
-        <p>Maja Korbøl</p>
+  
+   <header>
+        <div class="profile-logo">
+          <img 
+            src="logo-color.png" 
+            alt="Maja Korbøl logo"
+            height="70"
+            width="70">
+          <p class="profile-name">Maja Korbøl</p>
+        </div>
         <nav>
           <a href="index.html">Home</a>
           <a href="projects.html">Projects</a>
@@ -22,29 +30,35 @@
           <a href="contact.html">Contact</a>
         </nav>
       </header>
-      
+
+    <div class="wrapper">
       <main>
         <h1>Projects</h1>
-        <section>
-          <h2>Websites</h2>
-          <ul>
-            <li>This website</li>
-            <li>My CV website</li>
-            <li>Product upcoming page</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Other coding projects</h2>
-          <ul>
-            <li>Calculator</li>
-            <li>Countdown timer</li>
-            <li>Quiz app</li>
-          </ul>
-        </section>
-      </main>
+        <div class="two-column-layout">
+          <section class="column">
+            <h2>Websites</h2>
+            <ul>
+              <li>This website</li>
+              <li>My CV website</li>
+              <li>Product upcoming page</li>
+            </ul>
+          </section>
 
-      <footer></footer>
+          <section class="column">
+            <h2>Other coding projects</h2>
+            <ul>
+              <li>Calculator</li>
+              <li>Countdown timer</li>
+              <li>Quiz app</li>
+            </ul>
+          </section>
+        </div>
+      </main>
     </div>
-   
+
+    <footer>
+       <p>&#169; All rights reserved 2025</p>
+    </footer>
+
   </body>
 </html>

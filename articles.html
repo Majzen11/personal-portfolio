@@ -12,9 +12,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
+    
       <header>
-        <p>Maja Korbøl</p>
+        <div class="profile-logo">
+          <img 
+            src="logo-color.png" 
+            alt="Maja Korbøl logo"
+            height="70"
+            width="70">
+          <p class="profile-name">Maja Korbøl</p>
+        </div>
         <nav>
           <a href="index.html">Home</a>
           <a href="projects.html">Projects</a>
@@ -22,27 +29,37 @@
           <a href="contact.html">Contact</a>
         </nav>
       </header>
-      <main>
-        <h1>Articles</h1>
-        <section>
-          <h2>Articles about something I like</h2>
-          <ul>
-            <li>An article I like</li>
-            <li>Another article I like</li>
-            <li>An article about an interesting topic</li>
-            <li>An article I learned from</li>
-          </ul>
-        </section>
-        <section>
-          <h2>Articles about something else</h2>
-          <ul>
-            <li>This article</li>
-            <li>This other article</li>
-            <li>And then this one</li>
-          </ul>
-        </section>
-      </main>
-      <footer></footer>
-    </div>
+
+      <div class="wrapper">
+        
+        <main>
+          <h1>Articles</h1>
+          
+          <div class="two-column-layout">
+            <section class="column">
+              <h2>Articles about something I like</h2>
+              <ul>
+                <li>An article I like</li>
+                <li>Another article I like</li>
+                <li>An article about an interesting topic</li>
+                <li>An article I learned from</li>
+              </ul>
+            </section>
+
+            <section class=" column">
+              <h2>Articles about something else</h2>
+              <ul>
+                <li>This article</li>
+                <li>This other article</li>
+                <li>And then this one</li>
+              </ul>
+            </section>
+          </div>
+        </main>
+
+      </div>
+      <footer>
+         <p>&#169; All rights reserved 2025</p>
+      </footer>
   </body>
 </html>
