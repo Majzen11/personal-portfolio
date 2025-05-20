@@ -175,8 +175,9 @@ nav {
 
 .main-title {
   
-  font-size: 3.5rem;
-  
+  font-size: 3rem;
+  margin: 0;
+
   @media (width > 900px) {
     font-size: 4rem;
     }
