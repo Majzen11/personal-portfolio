@@ -174,9 +174,8 @@ nav {
 /*Hero section*/
 
 .main-title {
-  
   font-size: 3rem;
-  margin: 0;
+  margin-inline: 0;
 
   @media (width > 900px) {
     font-size: 4rem;
@@ -196,6 +195,7 @@ nav {
   display: grid;
   gap: 3.12rem;
   margin-inline: 1.25rem;
+  margin-block-end: 4rem;
   
   @media (width > 900px) {
     grid-template-columns: 1fr 1fr 1fr;
