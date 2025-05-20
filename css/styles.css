@@ -174,7 +174,7 @@ nav {
 /*Hero section*/
 
 .main-title {
-  font-size: 3rem;
+  font-size: 3.2rem;
   margin-inline: 0;
 
   @media (width > 900px) {
