@@ -54,11 +54,15 @@ img {
 }
 
 h1 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-family: aboreto;
   color: hsl(292, 93%, 90%);
   text-align: start;
-  margin-inline: 3.12rem;
+  margin-inline: 1.25rem;
+
+  @media (width > 900px) {
+    font-size: 3.5rem;
+  }
 
   @media (prefers-color-scheme: light) {
     color: hsl(292, 93%, 25%);
@@ -177,13 +181,16 @@ nav {
 .hero-section {
   line-height: 1;
   padding-block: 6.25rem;
+  margin-inline: 1.25rem;
   text-align: center;
 }
+
+/* Three-column layout section*/
 
 .three-column-layout {
   display: grid;
   gap: 3.12rem;
-  margin-inline: 3.12rem;
+  margin-inline: 1.25rem;
   
   @media (width > 900px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -258,12 +265,12 @@ nav {
   line-height: 1;
 }
 
-/*Two column layout pages*/
+/*Two-column layout pages*/
 
 .two-column-layout {
   display: grid;
   gap: 3.12rem;
-  margin-inline: 3.12rem;
+  margin-inline: 1.25rem;
   
   @media (width > 900px) {
     grid-template-columns: 1fr 1fr;
@@ -288,6 +295,7 @@ nav {
 
 .contact-form {
   text-align: center; 
+  
 }
 
 form {
@@ -298,6 +306,7 @@ form {
   border: 2px solid hsl(292, 93%, 15%);
   text-align: end;
   margin-block: 5rem;
+  margin-inline: 1.25rem;
 
   @media (prefers-color-scheme: light) {
    background: hsl(292, 93%, 95%);
