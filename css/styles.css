@@ -327,7 +327,7 @@ label {
 
 input,
 textarea {
-  width: 300px;
+  max-width: 300px;
   height: 2rem;
   border: 2px solid hsl(292, 93%, 15%);
   background-color: hsl(0, 0%, 3%);
