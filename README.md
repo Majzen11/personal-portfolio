@@ -37,5 +37,7 @@ For bonus points, you can:
 
 UPDATE!
 
-I thought I was completely finished with the project when I opened the site on my phone and realised that some of the design that I thought was responsive didn't work very well. I had checked this in the dev tools in Chrome, but apparently they weren't accurate enough. I'm glad I randomly decided to check the site on my phone. So now I have edited the code to (hopefully) get a responsive design that works properly. I need to learn if there is a better way to control for this in the future. This time I had already published the site and checked it on my phone that way, but maybe there's a way to check it on mobile without publishing first.
+I thought I was completely finished with the project when I randomly opened the site on my phone and realised that some of the design that I thought was responsive didn't work very well in that size after all. I had checked this in the dev tools in the browser, but apparently they weren't accurate enough, or I didn't see it well enough there. I'm glad I randomly decided to check the site on my phone. So now I have edited the code to (hopefully) get a responsive design that works properly. This was a nit of a hassle because there were margins I didn't realise were there and I tried a lot of things before I figures out what was wrong. I completely forgot to use the dev tools to check for problems. I haven't gotten used to using them for debugging yet. 
+
+I also need to learn if there is a better way to control for responsiveness in the future. This time I had already published the site and checked it on my phone that way, but maybe there's a way to check it on mobile without publishing first.
 
